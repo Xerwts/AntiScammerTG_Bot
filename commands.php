@@ -51,14 +51,14 @@ if ($data == 'home') {
 ##################################################################################
 
 if (stripos($text, "/antiscam")===0 or stripos($text, ".antiscam")===0) {
-	sendMessage($chat_id, "_🥀 抗-Scam Staff 🥀_
+	sendMessage($chat_id, "_🥀  Flower Anti-Scam Staff  🥀_
 
-👑 Founder = @RanaSweg
-⚜️ Co-founder = @Emifeig04
+👑 Founder = @LiLGio
+⚜️ Co-founder = @MontxIsback
 
-👮‍♂  Admin = @CrazyBoy_TG
-👮‍♂  Admin  = @OfficialDarknessBoy
-👮‍♂  Admin  = @KoalaVolante", 'HTML');
+👮‍♂  Admin = @-
+👮‍♂  Admin  = @-
+👮‍♂  Admin  = @-, 'HTML');
 }
 
 if (stripos($text, "/check ")===0 or stripos($text, ".check ")===0) {
@@ -118,7 +118,7 @@ Bannato da 👨🏼‍🔧
 👮🏼‍♂️ Admin: <a href='tg://user?id=$from_id'>$from_username</a>
 🆔 Admin: <code>$from_id</code>
 
-Prove 📃 ——> <a href='$PROVE'>@ProveScammers</a>
+Prove 📃 ——> <a href='$PROVE'>@FlowerAntiScamProof</a>
 
 <b>Troverete le prove usando l'ID o la @ precedente al net ban</b>", 'HTML', true);
   if (mysqli_num_rows($result) > 0) {
@@ -151,7 +151,7 @@ Prove 📃 ——> <a href='$PROVE'>@ProveScammers</a>
 				}
 			}
 		} elseif ($text == "/admin" or $text == ".admin") {
-			sendMessage($chat_id, "Devi inserire un <b>ID</b>!", 'HTML');
+			sendMessage($chat_id, "Inserisci un <b>ID</b>!", 'HTML');
 		}
 
 		//UNADMIN
@@ -186,7 +186,7 @@ Prove 📃 ——> <a href='$PROVE'>@ProveScammers</a>
 			}
 		}
 	} elseif ($text == "/vip" or $text == '.vip') {
-		sendMessage($chat_id, "Devi inserire un <b>ID</b>!", 'HTML');
+		sendMessage($chat_id, "Inserisci un <b>ID</b>!", 'HTML');
 	}
 
 	//UNVIP
@@ -220,7 +220,7 @@ Prove 📃 ——> <a href='$PROVE'>@ProveScammers</a>
 			}
 		}
 	} elseif ($text == "/membro" or $text == ".membro") {
-		sendMessage($chat_id, "Devi inserire un <b>ID</b>!", 'HTML');
+		sendMessage($chat_id, "Inserisci un <b>ID</b>!", 'HTML');
 	}
 
 	//UNMEMBRO
@@ -256,7 +256,7 @@ if (isAdmin("$from_id")) {
 		$PROVE = $CONFIG[3];
 		$NOME = $CONFIG[4];
 		if(isBanned("$ID")) {
-			sendMessage($chat_id, "L'utente è già <b>bannato!</b>", 'HTML');
+			sendMessage($chat_id, "L'utente è già <b>netbannato!</b>", 'HTML');
 		} else {
 			if (stripos($USERNAME, "@")===0) {
 				if (stripos($PROVE, "https://t.me/")===0) {
@@ -329,7 +329,7 @@ Prove 📃 ——> <a href='$PROVE'>@ProveScammers</a>
 				delBanned("$ID");
 				$msg_id = getMsgid();
 				updateMsgid($msg_id+1);
-				sendMessage("-1001164210719", "💠 <b>UNBAN GLOBALE</b> 💠\n👨‍Utente = <code>$ID</code>\n📃L'utente " . getChat($ID)['result']['first_name']. " e stato unbannato dal momento che non ha commesso nessuna truffa noi dello staff porgiamo le nostre scuse...Buona Giornata ❗️", 'HTML', true);
+				sendMessage("-1001164210719", "💠 <b>UNBAN GLOBALE</b> 💠\n👨‍Utente = <code>$ID</code>\n📃L'utente " . getChat($ID)['result']['first_name']. " è stato unbannato dal momento che non ha commesso nessuna truffa, lo staff Flower si scusa...Buona Giornata ❗️", 'HTML', true);
 				$action = "SELECT * FROM AntiScammerTG_Bot_group";
 				$result = mysqli_query($query, $action);
 				if (mysqli_num_rows($result) > 0) {
@@ -346,7 +346,7 @@ Prove 📃 ——> <a href='$PROVE'>@ProveScammers</a>
 			}
 		}
 	} elseif ($text == "/unban" or $text == ".unban") {
-		sendMessage($chat_id, "Devi inserire un <b>ID</b>!", 'HTML');
+		sendMessage($chat_id, "Inserisci un <b>ID</b>!", 'HTML');
 	}
 
 	if (stripos($text, "/silentban ")===0 or stripos($text, ".silentban ")===0) {
@@ -377,7 +377,7 @@ if (isVip("$from_id")) {
 		unbanChatMember($chat_id, $from_id);
 	}
   if (stripos($text, "/vip")===0 or stripos($text, ".vip")===0) {
-  	sendMessage($chat_id, "$from_first_name tu sì che sei un vero vip 😎💰 perché hai fatto una donazione a 抗-Scam", 'HTML');
+  	sendMessage($chat_id, "$from_first_name tu sì che sei un vero vip 😎💰 perché hai fatto una donazione a Flower Anti-Scam", 'HTML');
   }
 
 }
@@ -388,7 +388,7 @@ if (isVip("$from_id")) {
 
 if (isMembro("$from_id")) {
   if (stripos($text, "/membro")===0 or stripos($text, ".membro")===0) {
-  	sendMessage($chat_id, "$from_first_name vero membro supporter del 抗-Scam 💪😎", 'HTML');
+  	sendMessage($chat_id, "$from_first_name vero membro supporter di Flower Anti-Scam 💪😎", 'HTML');
   }
 }
 ##################################################################################
