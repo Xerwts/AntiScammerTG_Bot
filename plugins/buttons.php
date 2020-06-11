@@ -11,7 +11,7 @@ $menu['inline_keyboard'] =
 	[
 		[
 			'text'          => '➕ Aggiungimi ad un gruppo ➕',
-			'url' => 'http://telegram.me/AntiScammerTG_Bot?startgroup=start'
+			'url' => 'http://telegram.me/FlowerAntiScam_Bot?startgroup=start'
 		]
 	],
 	[
