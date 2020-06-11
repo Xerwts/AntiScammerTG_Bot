@@ -17,11 +17,11 @@ $menu['inline_keyboard'] =
 	[
 		[
 			'text'          => '📣 Canale',
-			'url' => 'http://telegram.me/AntiScammer_TG'
+			'url' => 'http://telegram.me/FlowerAntiScamChannel'
 		],
 		[
 			'text'          => '👥 Gruppo',
-			'url' => 'https://t.me/AntiScam_Chat'
+			'url' => 'https://t.me/FlowerAntiScamChat'
 		]
 	],
 	[
@@ -31,7 +31,7 @@ $menu['inline_keyboard'] =
 		],
 		[
 			'text' => '🗄 Prove Scammers',
-			'url' => 'http://telegram.me/ProveScammers'
+			'url' => 'http://telegram.me/FlowerAntiScamProof'
 		]
 	],
 	[
@@ -74,14 +74,14 @@ $approve['inline_keyboard'] =
 
 
 if ($data == 'staff') {
-	editMessageText("_🥀 抗-Scam Staff 🥀_
+	editMessageText("_🥀 Flower Anti-Scam Staff 🥀_
 
-👑 Founder = @RanaSweg
-⚜️ Co-founder = @Emifeig04
+👑 Founder = @LiLGio
+⚜️ Co-founder = @MontxIsBack
 
-👮‍♂ Admin = @CrazyBoy_TG
-👮‍♂ Admin  = @OfficialDarknessBoy
-👮‍♂ Admin  = @KoalaVolante
+👮‍♂ Admin = @-
+👮‍♂ Admin  = @-
+👮‍♂ Admin  = @-
 
 (Non è tutto il nostro staff ma loro sono i principali )", $message_chat_id, $message_message_id, null, 'HTML', null, $indietro);
 }
@@ -118,7 +118,7 @@ Bannato da 👨🏼‍🔧
 👮🏼‍♂️ Admin: <a href='tg://user?id=$from_id'>$from_username</a>
 🆔 Admin: <code>$from_id<code>
 
-Prove 📃 ——> <a href='$PROVE'>@ProveScammers</a>
+Prove 📃 ——> <a href='$PROVE'>@FlowerAntiScamProof</a>
 
 <b>Troverete le prove usando l'ID o la @ precedente al net ban</b>", 'HTML', true);
   if (mysqli_num_rows($result) > 0) {
