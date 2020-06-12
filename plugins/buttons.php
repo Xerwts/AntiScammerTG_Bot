@@ -16,7 +16,7 @@ $menu['inline_keyboard'] =
 	],
 	[
 		[
-			'text'          => '📣 Canale',
+			'text'          => '📣 Canale Netban',
 			'url' => 'http://telegram.me/FlowerAntiScamChannel'
 		],
 		[
