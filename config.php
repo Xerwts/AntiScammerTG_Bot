@@ -1,8 +1,8 @@
 <?php
 
-define('MYID', 1111);
+define('MYID', 906718578);
 
-define('NICKNAMEBOT', '@bot');
+define('NICKNAMEBOT', '@FlowerAntiscamBot');
 
 define('RESPONSE', true);
 
