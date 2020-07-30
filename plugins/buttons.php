@@ -1,6 +1,6 @@
 <?php
 require_once 'database.php';
-$adminID = [906718578,1166214997];
+$adminID = [906718578];
 //$a = lastrandomString();
 ##################################################################################
 /////////////////////////////////INLINE_MENUS/////////////////////////////////////
@@ -76,8 +76,8 @@ $approve['inline_keyboard'] =
 if ($data == 'staff') {
 	editMessageText("_🥀 Flower Anti-Scam Staff 🥀_
 
-👑 Founder = @LiLGio
-⚜️ Co-founder = @MontxIsBack
+👑 Founder = @LiLGioS
+⚜️ Co-founder = 
 
 👮‍♂ Admin = @-
 👮‍♂ Admin  = @-
