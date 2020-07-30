@@ -1,6 +1,6 @@
 <?php
 
-if (!isset($_GET['api'])) {
+if (!isset($_GET['1357426643:AAGQgtEgm0pPPB-dNKrnUoD_S4cDSXDaSgM'])) {
     exit();
 }
 require_once 'config.php';
